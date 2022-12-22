@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.fs-10 {
+  font-size: 15px !important;
+}
+.bg-light-grey {
+  background-color: rgba(175, 227, 249, 0.201) !important;
+}
+.header {
+  height: 85px;
+}
+.border-grey {
+  width: 95%;
+  margin: auto;
+  height: 1px;
+  background-color: rgb(189, 189, 189);
+}
+.main {
+  height: calc(100vh - 145px);
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  scroll-behavior: smooth;
+}
+.input-area {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  gap: 10px;
+  
+}
+.model{
+  position: absolute;
+  bottom:52px;
+  left: 50px;
+  min-height: 40px;
+  overflow: scroll;
+  width: 150px;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.267);
+  z-index: 1020;
+}
+li{
+  border-bottom: 2px  solid grey ;
+  padding: 4px;
+  text-align: center;
+}
+li:last-child{
+border: none;
+}
+.msg-box {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.dummy-box {
+  width: 100%;
+  height: 4px;
+}
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.avatar-text {
+  font-weight: 500;
+  color: white;
+}
+.msg,
+.user-details {
+  display: flex;
+  gap: 10px;
+
+}
+.user-msg {
+  background-color: white;
+  padding: 8px 10px ;
+  overflow-wrap: break-word;
+  width: max-content;
+  max-width: 220px;
+  border-radius:  0 15px 15px 15px  ;
+}
+
+.msg-time{
+  font-size: 12px;
+  color: gray;
+  align-self: flex-end;
+}
+.msg-like{
+align-self: center;
+color: rgb(246, 195, 67);
+}
